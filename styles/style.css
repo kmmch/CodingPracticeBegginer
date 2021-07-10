@@ -1,0 +1,278 @@
+@charset "UTF-8";
+/*
+ *  base.scss
+ */
+#test {
+  color: red;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+.header {
+  height: 80px;
+}
+
+.header-inner {
+  max-width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+}
+
+.header-logo {
+  margin: 20px 10px;
+}
+
+.header-logo > a > img {
+  width: 110px;
+  height: 20px;
+}
+
+.header-nav {
+  margin: 31px 0 30px 0;
+}
+
+.header-nav > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header-nav > ul > li {
+  margin-right: 20px;
+}
+
+.header-nav > ul > li > a {
+  font-weight: bold;
+  font-size: 11px;
+  color: #333333;
+}
+
+.keyvisual {
+  height: 551px;
+  width: 100vw;
+  background-image: url(../../images/keyvisual.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.keyvisual-copy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  text-align: center;
+  color: #ffffff;
+}
+
+.keyvisual-copy > h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.keyvisual-copy > p {
+  font-size: 16px;
+}
+
+.content {
+  width: 310px;
+  height: 336px;
+  -webkit-box-shadow: 0px 3px 6px 5px #00000029;
+          box-shadow: 0px 3px 6px 5px #00000029;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.content-img {
+  margin-bottom: 20px;
+}
+
+.content-title {
+  width: 300px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.content-dt {
+  padding: 20px;
+  position: absolute;
+  top: 80%;
+}
+
+.contents-inner {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.contents-title-wrapper {
+  text-align: center;
+  margin: 60px 0 49px 0;
+}
+
+.contents-title-wrapper > h2 {
+  font-size: 32px;
+}
+
+.more-btn {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  padding: 17px 110px;
+  -webkit-box-shadow: 0px 3px 6px 5px #00000029;
+          box-shadow: 0px 3px 6px 5px #00000029;
+  border-radius: 5px;
+}
+
+.more-btn-wrapper {
+  text-align: center;
+  margin: 46px 0 88px 0;
+}
+
+.cta {
+  height: 500px;
+  width: 100vw;
+  background-image: url(../../images/tim-bogdanov-4uojMEdcwI8-unsplash.png);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 59px;
+}
+
+.cta-copy > h2 {
+  font-size: 36px;
+  margin-bottom: 47px;
+}
+
+.cta-copy > p {
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cta-copy > a {
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 44px;
+  padding: 19px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #83032A;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: #333333;
+}
+
+.footer-copyright {
+  padding: 32px 0 31px 0;
+}
+
+.copyright {
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (min-width: 480px) {
+  /******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+  #test {
+    color: blue;
+  }
+  .header-logo {
+    margin: 20px 20px;
+  }
+  .header-logo > a > img {
+    width: 179px;
+    height: 40px;
+  }
+  .header-nav {
+    margin: 31px 0 30px 0;
+  }
+  .header-nav > ul > li > a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 600px) {
+  /******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+  #test {
+    color: red;
+  }
+}
+
+@media (min-width: 960px) {
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+  #test {
+    color: green;
+  }
+  .contents-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1280px) {
+  /******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+  #test {
+    color: yellow;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /******************************************************************
+
+Stylesheet: Retinaディスプレイで適用
+
+******************************************************************/
+}
+
+@media print {
+  /******************************************************************
+
+Stylesheet: プリンタのみに適用
+
+******************************************************************/
+}
+/*# sourceMappingURL=style.css.map */
